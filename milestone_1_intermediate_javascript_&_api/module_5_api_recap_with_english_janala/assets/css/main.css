@@ -1,0 +1,16 @@
+/* google fonts english and bengali */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap");
+
+/* for auto bangla support */
+[lang="bn"] {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+/* for auto english support */
+[lang="en"] {
+  font-family: "Instrument Serif", serif;
+}
+
+body {
+  font-family: "Instrument Serif", serif;
+}
