@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Source Serif 4", serif;
+  font-weight: normal;
+  background: rgb(238, 238, 238);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.load_users_btn {
+  padding: 15px 25px;
+  background: rgb(29, 29, 29);
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+
+  &:hover {
+    background: black;
+  }
+}
+
+#cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 16px;
+  grid-row-gap: 30px;
+}
+
+.user_card {
+  border: 1px solid #d5d5d5;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image_and_text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge_and_username {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+  & span i {
+    color: rgb(44, 44, 44);
+    font-size: 12px;
+  }
+}
+
+.dp {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.address_details {
+  display: flex;
+  /* align-items: center; */
+  gap: 5px;
+}
