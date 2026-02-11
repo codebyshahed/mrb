@@ -40,6 +40,7 @@ const removeActiveClass = () => {
 
 // load levelWords data
 const loadLevelWords = (id) => {
+  manageLoading(true);
   const url = `https://openapi.programming-hero.com/api/level/${id}`;
 
   fetch(url)
@@ -85,6 +86,7 @@ const displayLevelWords = (words) => {
             </div>
         </div>  
     `;
+    manageLoading(false);
     return;
   }
 
@@ -131,6 +133,8 @@ const displayLevelWords = (words) => {
     // apendchinld
     levelContainer.appendChild(cardDiv);
   });
+
+  manageLoading(false);
 };
 
 // load word details
@@ -144,10 +148,59 @@ const loadWordDetails = async (id) => {
 
 // dsiplay word details
 const displayWordDetails = (word) => {
-  console.log(word);
   const modalContainer = document.getElementById("modalContainer");
+  modalContainer.innerHTML = `
+    <div class="">
+        <h1 class="text-2xl sm:text-4xl font-semibold" lang="en">
+            ${word.word} (<i class="ri-mic-2-line"></i> :
+            <span lang="bn">${word.pronunciation}</span>)
+        </h1>
+        </div>
+
+        <div class="space-y-2">
+        <h4 class="text-xl sm:text-2xl font-semibold">Meaning</h4>
+        <p lang="bn" class="text-xl sm:text-2xl font-medium">${word.meaning}</p>
+        </div>
+
+        <div class="space-y-2">
+        <h4 class="text-2xl font-semibold">Example</h4>
+        <p class="text-zinc-900/80 text-xl sm:text-2xl font-thin">
+            ${word.sentence}
+        </p>
+        </div>
+
+        <div class="space-x-2">
+        <h4 class="text-xl sm:text-2xl font-light" lang="bn">
+            সমার্থক শব্দ গুলো
+        </h4>
+        <div>${createHtmlElements(word.synonyms)}</div>
+    </div>
+  `;
 
   document.getElementById("word_modal").showModal();
+};
+
+// create html elements
+const createHtmlElements = (arr) => {
+  const htmlElmnts = arr.map((el) => `<span class="btn">${el}</span>`);
+  return htmlElmnts.length === 0
+    ? '<span lang="bn" class="text-xs text-zinc-900/80">সিনোনিমস পাওয়া যায়নি</span>'
+    : htmlElmnts.join(" ");
+};
+
+// loading
+const manageLoading = (status) => {
+  if (status) {
+    document.getElementById("loadingContainer").classList.remove("hidden");
+    document.getElementById("loadingContainer").classList.add("flex");
+
+    document.getElementById("levelContainer").classList.add("hidden");
+  } else {
+    document.getElementById("loadingContainer").classList.remove("flex");
+    document.getElementById("loadingContainer").classList.add("hidden");
+
+    document.getElementById("levelContainer").classList.remove("hidden");
+  }
 };
 
 loadVocabulariesCategory();
