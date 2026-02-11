@@ -7,6 +7,12 @@ const loadVocabulariesCategory = async () => {
   displayVocCategories(vocCategoriesData.data);
 };
 
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}
+
 // display vocabularies categories
 const displayVocCategories = (lessons) => {
   // get the container and empty the container
@@ -120,6 +126,7 @@ const displayLevelWords = (words) => {
                 ></span>
                 </div>
                 <div
+                onclick="pronounceWord('${word.word}')"
                 class="cursor-pointer px-4 py-2 rounded-md bg-zinc-500/10 transition-all hover:bg-zinc-700/20"
                 >
                 <span
