@@ -110,7 +110,7 @@ const displayLevelWords = (words) => {
             </div>
             <div class="mt-14 flex items-center justify-between">
                 <div
-                onclick="my_modal_2.showModal()"
+                onclick="loadWordDetails(${word.id})"
                 class="cursor-pointer px-4 py-2 rounded-md bg-zinc-500/10 transition-all hover:bg-zinc-700/20"
                 >
                 <span
@@ -131,6 +131,23 @@ const displayLevelWords = (words) => {
     // apendchinld
     levelContainer.appendChild(cardDiv);
   });
+};
+
+// load word details
+const loadWordDetails = async (id) => {
+  const url = `https://openapi.programming-hero.com/api/word/${id}`;
+
+  const res = await fetch(url);
+  const details = await res.json();
+  displayWordDetails(details.data);
+};
+
+// dsiplay word details
+const displayWordDetails = (word) => {
+  console.log(word);
+  const modalContainer = document.getElementById("modalContainer");
+
+  document.getElementById("word_modal").showModal();
 };
 
 loadVocabulariesCategory();
