@@ -44,10 +44,38 @@ const loadLevelWords = (id) => {
 // display level words
 const displayLevelWords = (words) => {
   // get the container
-  const cardContainer = document.getElementById("cardContainer");
   const levelContainer = document.getElementById("levelContainer");
-  cardContainer.innerHTML = "";
   levelContainer.innerHTML = "";
+
+  // if words is empty
+  if (words.length === 0) {
+    levelContainer.innerHTML = `
+        <div
+            class="bg-stone-50 border border-zinc-200 rounded-3xl px-4 py-16 col-span-full"
+            >
+            <div class="text-center space-y-3">
+            <div class="">
+                <span
+                ><i
+                    class="ri-folder-warning-line text-5xl sm:text-8xl text-stone-500"
+                ></i
+                ></span>
+            </div>
+
+            <h4 lang="bn" class="text-stone-500 text-sm font-thin">
+                এই <span lang="en">Lesson</span> এ এখনো কোন <span lang="en">Vocabulary</span> যুক্ত করা হয়নি।
+            </h4>
+            <h1
+                lang="bn"
+                class="text-2xl sm:text-4xl text-stone-800 font-thin"
+            >
+                নেক্সট <span lang="en">Lesson</span> এ যান
+            </h1>
+            </div>
+        </div>  
+    `;
+    return;
+  }
 
   // loop trought
   words.forEach((word) => {
@@ -58,7 +86,7 @@ const displayLevelWords = (words) => {
             class="bg-white rounded-lg sm:rounded-xl p-4 sm:p-14 border-2 border-stone-100 text-center"
             >
             <div class="space-y-4 sm:space-y-6">
-                <h1 class="text-zinc-800 text-3xl font-semibold">${word.word}</h1>
+                <h1 class="text-zinc-800 text-3xl font-semibold">${word.word ? word.word : "N/A"}</h1>
                 <h4 class="text-zinc-800 text-xl font-medium">
                 Meaning / Pronounciation
                 </h4>
@@ -66,7 +94,7 @@ const displayLevelWords = (words) => {
                 lang="bn"
                 class="text-zinc-900 opacity-80 text-2xl sm:text-3xl font-semibold"
                 >
-                "${word.meaning} / ${word.pronunciation}"
+                "${word.meaning ? word.meaning : "N/A"} / ${word.pronunciation ? word.pronunciation : "N/A"}"
                 </h2>
             </div>
             <div class="mt-14 flex items-center justify-between">
@@ -89,18 +117,8 @@ const displayLevelWords = (words) => {
     `;
 
     // apendchinld
-    cardContainer.appendChild(cardDiv);
+    levelContainer.appendChild(cardDiv);
   });
 };
-
-/**
- * {
-    "id": 74,
-    "level": 1,
-    "word": "Dog",
-    "meaning": "কুকুর",
-    "pronunciation": "ডগ"
-}
- */
 
 loadVocabulariesCategory();
