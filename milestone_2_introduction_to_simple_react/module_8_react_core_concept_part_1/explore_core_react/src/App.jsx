@@ -3,50 +3,21 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>React Core Concepts</h1>
-      <Student />
-      <Student />
-
-      <Person />
-      <Developer name="Shahed" tech="JavaScript" />
-      <Developer name="Ownist" tech="React.js" />
+      {/* <Player name="sakib" runs="512" /> */}
+      <Salami ocassion="Rojar Eid" ammount="30" />
+      <Salami ocassion="Graduation" ammount="500" />
+      <Salami ocassion="Finish Diploma" />
     </>
   );
 }
 
-// student
-function Student() {
-  return (
-    <div className="student">
-      <p>Name:</p>
-      <p>Dept:</p>
-    </div>
-  );
-}
-
-function Person() {
-  const name = "Ownist";
-
-  // style
-  const personStyle = {
-    color: "green",
-    textAlign: "left",
-  };
-
-  return (
-    <div style={personStyle}>
-      <h3>I'm {name}</h3>
-    </div>
-  );
-}
-
-function Developer(props) {
-  console.log(props);
+function Salami({ ocassion, ammount = 0 }) {
+  // console.log(ocassion);
 
   return (
     <div>
-      <h2>Developer: {props.name}</h2>
-      <h3>Technology: {props.tech}</h3>
+      <h1>Salami For: {ocassion}</h1>
+      <h2>Ammount: {ammount}tk</h2>
     </div>
   );
 }
