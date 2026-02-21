@@ -1,12 +1,12 @@
 import "./App.css";
+import Todo from "./Todo";
 
 function App() {
   return (
     <>
-      {/* <Player name="sakib" runs="512" /> */}
-      <Salami ocassion="Rojar Eid" ammount="30" />
-      <Salami ocassion="Graduation" ammount="500" />
-      <Salami ocassion="Finish Diploma" />
+      <Todo task="Learn React" isDone={true} />
+      <Todo task="Revise JS" isDone={false} />
+      <Todo task="Take a shower" isDone={true} />
     </>
   );
 }
