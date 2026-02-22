@@ -4,7 +4,7 @@ import Todo from "./Todo";
 function App() {
   return (
     <>
-      <Todo task="Learn React" isDone={true} />
+      <Todo task="Learn React" isDone={true} time='50' />
       <Todo task="Revise JS" isDone={false} />
       <Todo task="Take a shower" isDone={true} />
     </>
