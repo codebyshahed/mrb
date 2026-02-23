@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./Counter";
 
 function App() {
   /**
@@ -21,6 +22,11 @@ function App() {
       <button onClick={() => handleClickedToAddFive(15)}>
         Clicked me to add 5
       </button>
+
+      <br />
+      <br />
+
+      <Counter />
     </>
   );
 }
