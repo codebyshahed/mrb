@@ -1,4 +1,5 @@
 import "./App.css";
+import Batsman from "./Batsman";
 import Counter from "./Counter";
 
 function App() {
@@ -27,6 +28,11 @@ function App() {
       <br />
 
       <Counter />
+
+      <br />
+      <br />
+
+      <Batsman />
     </>
   );
 }
