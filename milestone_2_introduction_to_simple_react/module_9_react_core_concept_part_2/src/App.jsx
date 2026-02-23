@@ -3,6 +3,7 @@ import "./App.css";
 import Batsman from "./Batsman";
 import Counter from "./Counter";
 import Users from "./Users";
+import Players from "./Players";
 
 const fetchData = fetch("https://jsonplaceholder.typicode.com/users").then(
   (res) => res.json(),
@@ -40,9 +41,11 @@ function App() {
 
       <Batsman /> */}
 
-      <Suspense fallback={<h3>Loading...</h3>}>
+      {/* <Suspense fallback={<h3>Loading...</h3>}>
         <Users fetchData={fetchData} />
-      </Suspense>
+      </Suspense> */}
+
+      <Players />
     </>
   );
 }
