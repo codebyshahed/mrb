@@ -1,6 +1,12 @@
+import { Suspense } from "react";
 import "./App.css";
 import Batsman from "./Batsman";
 import Counter from "./Counter";
+import Users from "./Users";
+
+const fetchData = fetch("https://jsonplaceholder.typicode.com/users").then(
+  (res) => res.json(),
+);
 
 function App() {
   /**
@@ -19,7 +25,7 @@ function App() {
       {/**
        * handle button clicked function
        */}
-      <button onClick={handleClicked}>Click me!</button>
+      {/* <button onClick={handleClicked}>Click me!</button>
       <button onClick={() => handleClickedToAddFive(15)}>
         Clicked me to add 5
       </button>
@@ -32,7 +38,11 @@ function App() {
       <br />
       <br />
 
-      <Batsman />
+      <Batsman /> */}
+
+      <Suspense fallback={<h3>Loading...</h3>}>
+        <Users fetchData={fetchData} />
+      </Suspense>
     </>
   );
 }
