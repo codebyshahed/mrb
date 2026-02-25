@@ -7,9 +7,11 @@ const Countries = ({ countriesPromise }) => {
 
   return (
     <div>
-      <h1>Countries: {countries.length}</h1>
+      <h1 className="text-xl font-light text-zinc-300">
+        Countries: {countries.length}
+      </h1>
 
-      <div className="">
+      <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         {countries.map((country, index) => (
           <Country key={index} country={country} />
         ))}
