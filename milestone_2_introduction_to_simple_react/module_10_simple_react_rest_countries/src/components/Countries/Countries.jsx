@@ -7,7 +7,8 @@ const Countries = ({ countriesPromise }) => {
   const [visitedCountry, setVisitedCountry] = useState([]);
 
   const handleVisitedCountry = (country) => {
-    console.log(country);
+    const newVisistedCountries = [...visitedCountry, country];
+    setVisitedCountry(newVisistedCountries);
   };
 
   return (
@@ -17,8 +18,16 @@ const Countries = ({ countriesPromise }) => {
       </h1>
 
       <h2 className="text-base text-zinc-300 font-thin my-2">
-        Total Country Visited:
+        Total Country Visited: {visitedCountry.length}
       </h2>
+
+      <div className="flex items-center gap-x-4 mt-5">
+        {visitedCountry.map((countryName, index) => (
+          <ol key={index}>
+            <li>{countryName.name.common}</li>
+          </ol>
+        ))}
+      </div>
 
       <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         {countries.map((country, index) => (
