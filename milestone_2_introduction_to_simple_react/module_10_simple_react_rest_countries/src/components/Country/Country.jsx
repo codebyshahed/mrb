@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const Country = ({ country }) => {
+const Country = ({ country, handleVisitedCountry }) => {
   const [isVisited, setIsVisited] = useState(false);
 
   const handleVisited = () => {
-    let visitedCountry = 0;
     setIsVisited(true);
+    handleVisitedCountry(country);
   };
 
   return (
@@ -17,8 +17,9 @@ const Country = ({ country }) => {
           className="w-full object-contain"
           src={country.flags.flags.png}
           alt={country.flags.flags.alt}
+          loading="lazy"
         />
-        <div className="space-y-1">
+        <div className="">
           <h1>{country.name.common}</h1>
           <p>Population: {country?.population?.population}</p>
           <p>Area: {country?.area?.area}</p>
@@ -33,7 +34,6 @@ const Country = ({ country }) => {
           disabled={isVisited}
           className={`px-5 py-2 rounded-sm font-normal ${isVisited ? "visited" : "not_visited"}`}
         >
-          {/* px-5 py-2 bg-white text-zinc-800 rounded-sm hover:bg-zinc-300 disabled:bg-zinc-500 disabled:text-zinc-300 disabled:cursor-not-allowed */}
           {isVisited ? "Visited" : "Not Visited"}
         </button>
       </div>
