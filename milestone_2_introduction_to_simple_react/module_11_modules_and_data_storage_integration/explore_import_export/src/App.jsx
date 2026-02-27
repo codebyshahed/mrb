@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { add, devide as vag, diff, mult } from "./utils/math/math";
+import { tax } from "./utils/tax/taxt";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +13,10 @@ function App() {
   const multiply = mult(4, 2);
   const vagfol = vag(25, 5);
 
-  console.log(sum, minus, multiply, vagfol);
+  const mytax = tax(4, 2);
+  // console.log(mytax)
+
+  // console.log(sum, minus, multiply, vagfol);
 
   return (
     <>

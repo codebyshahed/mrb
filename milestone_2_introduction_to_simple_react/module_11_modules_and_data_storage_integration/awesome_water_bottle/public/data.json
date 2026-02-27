@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "AquaPure Bottle",
+    "brand": "HydroMax",
+    "capacity_ml": 500,
+    "color": "Blue",
+    "price": 150,
+    "in_stock": true
+  },
+  {
+    "id": 2,
+    "name": "FreshSip Bottle",
+    "brand": "PureLife",
+    "capacity_ml": 750,
+    "color": "Black",
+    "price": 220,
+    "in_stock": true
+  },
+  {
+    "id": 3,
+    "name": "CoolWave Bottle",
+    "brand": "Oceanic",
+    "capacity_ml": 1000,
+    "color": "Green",
+    "price": 300,
+    "in_stock": false
+  },
+  {
+    "id": 4,
+    "name": "DailyHydro Bottle",
+    "brand": "HydroMax",
+    "capacity_ml": 600,
+    "color": "Red",
+    "price": 180,
+    "in_stock": true
+  },
+  {
+    "id": 5,
+    "name": "TravelMate Bottle",
+    "brand": "MoveOn",
+    "capacity_ml": 1200,
+    "color": "Gray",
+    "price": 350,
+    "in_stock": true
+  },
+  {
+    "id": 6,
+    "name": "EcoDrink Bottle",
+    "brand": "GreenEarth",
+    "capacity_ml": 800,
+    "color": "White",
+    "price": 260,
+    "in_stock": false
+  },
+  {
+    "id": 7,
+    "name": "SportX Bottle",
+    "brand": "FitLife",
+    "capacity_ml": 700,
+    "color": "Yellow",
+    "price": 240,
+    "in_stock": true
+  },
+  {
+    "id": 8,
+    "name": "ChillPro Bottle",
+    "brand": "IceTech",
+    "capacity_ml": 900,
+    "color": "Purple",
+    "price": 320,
+    "in_stock": true
+  },
+  {
+    "id": 9,
+    "name": "MiniSip Bottle",
+    "brand": "Kiddo",
+    "capacity_ml": 400,
+    "color": "Pink",
+    "price": 130,
+    "in_stock": true
+  },
+  {
+    "id": 10,
+    "name": "UltraSteel Bottle",
+    "brand": "SteelPro",
+    "capacity_ml": 1500,
+    "color": "Silver",
+    "price": 450,
+    "in_stock": false
+  }
+]
