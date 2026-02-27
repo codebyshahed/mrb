@@ -1,6 +1,10 @@
 import React, { use, useEffect, useState } from "react";
 import Bottle from "./Bottle";
-import { addToStoredCart, getStoredCart } from "../utilities/localStorage";
+import {
+  addToStoredCart,
+  getStoredCart,
+  removeFromCart,
+} from "../utilities/localStorage";
 import Cart from "./Cart";
 
 const Bottles = ({ bottlePrimise }) => {
@@ -33,6 +37,7 @@ const Bottles = ({ bottlePrimise }) => {
   const handleRemoveFromCart = (id) => {
     const remainingCart = cart.filter((bottle) => bottle.id !== id);
     setCart(remainingCart);
+    removeFromCart(id);
   };
 
   return (
