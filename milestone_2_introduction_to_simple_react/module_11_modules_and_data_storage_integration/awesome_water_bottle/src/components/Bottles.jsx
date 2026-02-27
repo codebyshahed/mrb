@@ -1,12 +1,20 @@
-import React, { use } from 'react'
+import React, { use } from "react";
+import Bottle from "./Bottle";
 
-const Bottles = ({bottlePrimise}) => {
-    const bottleData = use(bottlePrimise)
-    console.log(bottleData)
+const Bottles = ({ bottlePrimise }) => {
+  const bottleData = use(bottlePrimise);
 
   return (
-    <div>Bottles</div>
-  )
-}
+    <div>
+      <h1>Bottles: {bottleData.length}</h1>
 
-export default Bottles
+      <div className="">
+        {bottleData.map((bottle, index) => (
+          <Bottle bottle={bottle} key={index} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Bottles;
