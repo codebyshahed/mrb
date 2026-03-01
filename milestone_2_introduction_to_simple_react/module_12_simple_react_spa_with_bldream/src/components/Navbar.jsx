@@ -15,7 +15,7 @@ const Navbar = () => {
         <ul className="flex items-center gap-x-12">
           <div className="hidden md:flex items-center gap-x-12">
             {navItems?.map((item, index) => (
-              <li>
+              <li key={index}>
                 <a
                   className="text-neutral-900/70 text-base font-normal duration-300 hover:text-neutral-900"
                   href={item.href}
@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-x-2.5 px-5 py-4 outline outline-neutral-900/10 rounded-xl">
-            <p>
+            <p className="text-neutral-900 text-base font-semibold">
               <span>0</span> Coin
             </p>
             <img src={dollar} alt="coin" />

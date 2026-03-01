@@ -1,0 +1,134 @@
+[
+  {
+    "id": "P001",
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "All-Rounder",
+    "position": "Batsman",
+    "rating": 92,
+    "price": 1500000,
+    "currency": "USD",
+    "img": "https://example.com/images/virat-kohli.png"
+  },
+  {
+    "id": "P002",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "position": "Batsman",
+    "rating": 90,
+    "price": 1400000,
+    "currency": "USD",
+    "img": "https://example.com/images/babar-azam.png"
+  },
+  {
+    "id": "P003",
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-Rounder",
+    "position": "All-Rounder",
+    "rating": 91,
+    "price": 1450000,
+    "currency": "USD",
+    "img": "https://example.com/images/ben-stokes.png"
+  },
+  {
+    "id": "P004",
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "position": "Batsman",
+    "rating": 89,
+    "price": 1350000,
+    "currency": "USD",
+    "img": "https://example.com/images/kane-williamson.png"
+  },
+  {
+    "id": "P005",
+    "name": "Joe Root",
+    "country": "England",
+    "role": "Batsman",
+    "position": "Batsman",
+    "rating": 88,
+    "price": 1300000,
+    "currency": "USD",
+    "img": "https://example.com/images/joe-root.png"
+  },
+  {
+    "id": "P006",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "position": "All-Rounder",
+    "rating": 87,
+    "price": 1250000,
+    "currency": "USD",
+    "img": "https://example.com/images/shakib-al-hasan.png"
+  },
+  {
+    "id": "P007",
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "position": "Batsman",
+    "rating": 86,
+    "price": 1200000,
+    "currency": "USD",
+    "img": "https://example.com/images/david-warner.png"
+  },
+  {
+    "id": "P008",
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "position": "Bowler",
+    "rating": 93,
+    "price": 1550000,
+    "currency": "USD",
+    "img": "https://example.com/images/jasprit-bumrah.png"
+  },
+  {
+    "id": "P009",
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "role": "Bowler",
+    "position": "Bowler",
+    "rating": 90,
+    "price": 1400000,
+    "currency": "USD",
+    "img": "https://example.com/images/mitchell-starc.png"
+  },
+  {
+    "id": "P010",
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "position": "Bowler",
+    "rating": 89,
+    "price": 1380000,
+    "currency": "USD",
+    "img": "https://example.com/images/rashid-khan.png"
+  },
+  {
+    "id": "P011",
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Wicket-Keeper",
+    "position": "Batsman",
+    "rating": 85,
+    "price": 1150000,
+    "currency": "USD",
+    "img": "https://example.com/images/quinton-de-kock.png"
+  },
+  {
+    "id": "P012",
+    "name": "Hardik Pandya",
+    "country": "India",
+    "role": "All-Rounder",
+    "position": "All-Rounder",
+    "rating": 88,
+    "price": 1320000,
+    "currency": "USD",
+    "img": "https://example.com/images/hardik-pandya.png"
+  }
+]
