@@ -8,6 +8,7 @@
   --font-display: "Instrument Serif", serif;
 }
 
+/* base styles */
 @layer base {
   body {
     @apply relative w-full overflow-x-hidden font-display;
@@ -15,5 +16,16 @@
 
   ::selection {
     @apply bg-yellow-300 text-neutral-900;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+/* components */
+@layer components {
+  .common_btn {
+    @apply text-base font-normal px-5 py-3.5 border border-neutral-900;
   }
 }
