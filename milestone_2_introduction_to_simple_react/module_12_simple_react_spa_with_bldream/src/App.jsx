@@ -23,10 +23,10 @@ function App() {
         </div>
 
         <div className="flex flex-row items-center gap-x-0">
-          <button className="common_btn">
+          <button className="common_btn rounded-tl-xl rounded-bl-xl border-neutral-900/10 text-neutral-900 bg-yellow-300">
             Available
           </button>
-          <button className="common_btn">
+          <button className="common_btn rounded-tr-xl rounded-br-xl border-l-0 border-neutral-900/10">
             Selected (<span>0</span>)
           </button>
         </div>
