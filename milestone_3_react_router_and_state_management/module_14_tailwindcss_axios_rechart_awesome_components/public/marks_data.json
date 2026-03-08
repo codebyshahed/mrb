@@ -1,0 +1,232 @@
+[
+  {
+    "id": "STU-2026-001",
+    "name": "Arif Ahmed",
+    "classInfo": {
+      "grade": "10",
+      "section": "A",
+      "roll": 1
+    },
+    "marks": {
+      "physics": 82,
+      "chemistry": 75,
+      "math": 88
+    },
+    "personalDetails": {
+      "age": 16,
+      "bloodGroup": "A+",
+      "attendancePercentage": 95
+    },
+    "contact": {
+      "email": "arif.ahmed@example.com",
+      "address": "Dhanmondi, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-002",
+    "name": "Sultana Razia",
+    "classInfo": {
+      "grade": "10",
+      "section": "B",
+      "roll": 12
+    },
+    "marks": {
+      "physics": 45,
+      "chemistry": 52,
+      "math": 40
+    },
+    "personalDetails": {
+      "age": 15,
+      "bloodGroup": "O+",
+      "attendancePercentage": 88
+    },
+    "contact": {
+      "email": "razia.s@example.com",
+      "address": "Mirpur, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-003",
+    "name": "Tanvir Hasan",
+    "classInfo": {
+      "grade": "10",
+      "section": "A",
+      "roll": 2
+    },
+    "marks": {
+      "physics": 95,
+      "chemistry": 91,
+      "math": 98
+    },
+    "personalDetails": {
+      "age": 16,
+      "bloodGroup": "B+",
+      "attendancePercentage": 98
+    },
+    "contact": {
+      "email": "tanvir.h@example.com",
+      "address": "Uttara, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-004",
+    "name": "Nusrat Jahan",
+    "classInfo": {
+      "grade": "10",
+      "section": "C",
+      "roll": 45
+    },
+    "marks": {
+      "physics": 33,
+      "chemistry": 41,
+      "math": 28
+    },
+    "personalDetails": {
+      "age": 15,
+      "bloodGroup": "AB+",
+      "attendancePercentage": 72
+    },
+    "contact": {
+      "email": "nusrat.j@example.com",
+      "address": "Banani, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-005",
+    "name": "Rakib Hossain",
+    "classInfo": {
+      "grade": "10",
+      "section": "A",
+      "roll": 5
+    },
+    "marks": {
+      "physics": 68,
+      "chemistry": 72,
+      "math": 65
+    },
+    "personalDetails": {
+      "age": 16,
+      "bloodGroup": "O-",
+      "attendancePercentage": 90
+    },
+    "contact": {
+      "email": "rakib.h@example.com",
+      "address": "Gulshan, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-006",
+    "name": "Mehedi Hasan",
+    "classInfo": {
+      "grade": "10",
+      "section": "B",
+      "roll": 3
+    },
+    "marks": {
+      "physics": 85,
+      "chemistry": 80,
+      "math": 90
+    },
+    "personalDetails": {
+      "age": 16,
+      "bloodGroup": "A-",
+      "attendancePercentage": 93
+    },
+    "contact": {
+      "email": "mehedi.h@example.com",
+      "address": "Mohammadpur, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-007",
+    "name": "Sadia Islam",
+    "classInfo": {
+      "grade": "10",
+      "section": "C",
+      "roll": 50
+    },
+    "marks": {
+      "physics": 29,
+      "chemistry": 35,
+      "math": 22
+    },
+    "personalDetails": {
+      "age": 15,
+      "bloodGroup": "B-",
+      "attendancePercentage": 65
+    },
+    "contact": {
+      "email": "sadia.i@example.com",
+      "address": "Badda, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-008",
+    "name": "Fahim Muntasir",
+    "classInfo": {
+      "grade": "10",
+      "section": "A",
+      "roll": 10
+    },
+    "marks": {
+      "physics": 60,
+      "chemistry": 58,
+      "math": 64
+    },
+    "personalDetails": {
+      "age": 16,
+      "bloodGroup": "O+",
+      "attendancePercentage": 85
+    },
+    "contact": {
+      "email": "fahim.m@example.com",
+      "address": "Moghbazar, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-009",
+    "name": "Lamia Akter",
+    "classInfo": {
+      "grade": "10",
+      "section": "B",
+      "roll": 7
+    },
+    "marks": {
+      "physics": 78,
+      "chemistry": 84,
+      "math": 81
+    },
+    "personalDetails": {
+      "age": 15,
+      "bloodGroup": "A+",
+      "attendancePercentage": 91
+    },
+    "contact": {
+      "email": "lamia.a@example.com",
+      "address": "Khilgaon, Dhaka"
+    }
+  },
+  {
+    "id": "STU-2026-010",
+    "name": "Zubair Bin Walid",
+    "classInfo": {
+      "grade": "10",
+      "section": "A",
+      "roll": 4
+    },
+    "marks": {
+      "physics": 92,
+      "chemistry": 89,
+      "math": 94
+    },
+    "personalDetails": {
+      "age": 16,
+      "bloodGroup": "B+",
+      "attendancePercentage": 99
+    },
+    "contact": {
+      "email": "zubair.w@example.com",
+      "address": "Farmgate, Dhaka"
+    }
+  }
+]
