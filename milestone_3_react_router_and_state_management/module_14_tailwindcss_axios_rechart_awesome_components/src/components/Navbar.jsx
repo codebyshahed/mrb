@@ -7,13 +7,13 @@ const Navbar = () => {
 
   return (
     <header className="bg-slate-100 border border-gray-300 w-full">
-      <nav className="max-w-285 mx-auto py-1 px-4">
+      <nav className="max-w-285 mx-auto py-5 px-4">
         <div className="lg:hidden">
           <button onClick={() => setIsOpen((prev) => !prev)}>
             {isOpen ? <CircleX /> : <Menu />}
           </button>
 
-          <ul className="">
+          <ul className={`${isOpen ? "flex flex-col" : "hidden"}`}>
             {navData.map((item) => (
               <li key={item.id}>
                 <a href={item.path}>{item.label}</a>

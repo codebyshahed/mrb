@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "planName": "Monthly Basic",
+    "price": 2500,
+    "duration": "1 Month",
+    "features": [
+      "Gym Access",
+      "Locker Facility",
+      "Basic Cardio",
+      "Free Weights"
+    ],
+    "isRecommended": false
+  },
+  {
+    "id": 2,
+    "planName": "Quarterly Pro",
+    "price": 6000,
+    "duration": "3 Months",
+    "features": [
+      "Gym Access",
+      "Locker Facility",
+      "Steam & Sauna",
+      "1 Personal Training Session",
+      "Diet Chart"
+    ],
+    "isRecommended": true
+  },
+  {
+    "id": 3,
+    "planName": "Half-Yearly Elite",
+    "price": 10000,
+    "duration": "6 Months",
+    "features": [
+      "All Pro Features",
+      "Unlimited Steam Bath",
+      "Free Workout Gear",
+      "Monthly Body Composition Analysis"
+    ],
+    "isRecommended": false
+  },
+  {
+    "id": 4,
+    "planName": "Annual Ultimate",
+    "price": 18000,
+    "duration": "1 Year",
+    "features": [
+      "All Elite Features",
+      "VIP Locker",
+      "2 Months Free Extensions",
+      "Couple Discount Eligible",
+      "Priority Support"
+    ],
+    "isRecommended": false
+  },
+  {
+    "id": 5,
+    "planName": "Student Starter",
+    "price": 1800,
+    "duration": "1 Month",
+    "features": [
+      "Gym Access (Off-peak hours)",
+      "Locker Facility",
+      "ID Card Required"
+    ],
+    "isRecommended": false
+  }
+]
