@@ -1,0 +1,4 @@
+.root_flex {
+  display: flex;
+  gap: 16px;
+}
