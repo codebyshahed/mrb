@@ -7,12 +7,7 @@ import "./Root.css";
 const Root = () => {
   return (
     <div>
-      <Header />
-      <div className="root_flex">
-        <Sidebar />
-        <Outlet />
-      </div>
-      <Footer />
+      
     </div>
   );
 };
