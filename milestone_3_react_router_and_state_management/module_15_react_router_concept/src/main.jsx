@@ -37,6 +37,11 @@ const router = createBrowserRouter([
       },
     ],
   },
+
+  {
+    path: "*",
+    element: <h1>Not Found: 404.. manger nati ja vag</h1>,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
