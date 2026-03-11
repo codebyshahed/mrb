@@ -1,5 +1,5 @@
 import { Suspense, useState } from "react";
-import { Link } from "react-router";
+import { Link, Navigate } from "react-router";
 import ShowInfo from "../ShowInfo";
 
 const AllPosts = ({ user }) => {
@@ -8,6 +8,11 @@ const AllPosts = ({ user }) => {
   const userPromise = fetch(
     `https://jsonplaceholder.typicode.com/users/${id}`,
   ).then((res) => res.json());
+  const [visitHome, setVisitHome] = useState(false);
+
+  if (visitHome) {
+    return <Navigate to={"/"} />;
+  }
 
   return (
     <div className="p-4 bg-white border border-gray-200 space-y-4">
@@ -35,6 +40,8 @@ const AllPosts = ({ user }) => {
           <ShowInfo userPromise={userPromise} />
         </Suspense>
       )}
+
+      <button onClick={() => setVisitHome(true)}>Visit Home</button>
     </div>
   );
 };
