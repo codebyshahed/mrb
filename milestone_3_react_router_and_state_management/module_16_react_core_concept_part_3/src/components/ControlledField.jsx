@@ -4,6 +4,8 @@ const ControlledField = () => {
   // alll states
   const [password, setPassword] = useState("kps");
   const [err, setErr] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
 
   const handle_form_submit = (e) => {
     // page ta reload hoyo nh
@@ -16,6 +18,11 @@ const ControlledField = () => {
     }
   };
 
+  const handle_name_change = (e) => {
+    setName(e.target.value);
+    console.log(e.target.value);
+  };
+
   const handle_password_onchange = (e) => {
     console.log(e.target.value);
     setPassword(e.target.value);
@@ -25,6 +32,11 @@ const ControlledField = () => {
     // } else {
     //   setErr("");
     // }
+  };
+
+  const handle_email_change = (e) => {
+    setEmail(e.target.value);
+    console.log(e.target.value);
   };
 
   return (
@@ -41,12 +53,22 @@ const ControlledField = () => {
         />
         <br />
         <input
+          onChange={handle_email_change}
           type="email"
+          defaultValue={email}
           name="email"
           id="email"
           required
           placeholder="email"
         />
+        <input
+          onChange={handle_name_change}
+          defaultValue={name}
+          type="name"
+          name="name"
+          id="name"
+        />
+        <br />
         <br />
         <p style={{ color: "red" }}>{err}</p>
         {/* <br /> */}
