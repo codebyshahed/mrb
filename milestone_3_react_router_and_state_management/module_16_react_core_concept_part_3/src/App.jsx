@@ -1,4 +1,5 @@
 import ControlledField from "./components/ControlledField";
+import FamilyTree from "./components/FamilyTree/FamilyTree";
 import FormAction from "./components/FormAction";
 import HookForm from "./components/HookForm";
 import ProductManageMent from "./components/ProductManagement/ProductManageMent";
@@ -13,7 +14,8 @@ function App() {
       {/* <ControlledField /> */}
       {/* <UnControlledField /> */}
       {/* <HookForm /> */}
-      <ProductManageMent />
+      {/* <ProductManageMent /> */}
+      <FamilyTree />
     </>
   );
 }
