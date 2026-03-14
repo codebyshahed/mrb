@@ -21,4 +21,4 @@ const add_to_stored_db = (id) => {
   }
 };
 
-export { add_to_stored_db };
+export { add_to_stored_db, get_stored_book };
