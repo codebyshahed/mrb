@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ProductFrom = () => {
+const ProductFrom = ({ handle_add_products }) => {
+  const [err, setErr] = useState("");
   const handle_product_submit = (e) => {
     e.preventDefault();
 
@@ -8,15 +9,26 @@ const ProductFrom = () => {
     const price = e.target.price.value;
     const quantity = e.target.quantity.value;
 
-    // console.log(name, price, quantity);
+    if (name.length === 0) {
+      setErr("plz provide a name");
+      return;
+    } else if (price === 0) {
+      setErr("plz provide a price");
+      return;
+    } else if (price < 0) {
+      setErr("plz provide a positive number");
+      return;
+    } else {
+      setErr("");
+    }
 
     const new_product = {
       name,
       price,
       quantity,
     };
-    // print new product
-    console.log(new_product);
+    // set new product
+    handle_add_products(new_product);
   };
 
   return (
@@ -31,6 +43,10 @@ const ProductFrom = () => {
       <input type="text" name="quantity" id="quantity" />
       <br />
       <button type="submit">Continue</button>
+      <br />
+      <p className="text-red-500">
+        <small>{err}</small>
+      </p>
     </form>
   );
 };
