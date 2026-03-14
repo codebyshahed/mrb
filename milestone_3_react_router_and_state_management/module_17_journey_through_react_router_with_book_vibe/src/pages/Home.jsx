@@ -1,8 +1,12 @@
+import Banner from "../components/Banner";
+import Books from "./books/Books";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Hey, ami home</h1>
-    </div>
+    <>
+      <Banner />
+      <Books />
+    </>
   );
 };
 
