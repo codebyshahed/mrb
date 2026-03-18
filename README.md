@@ -1,14 +1,25 @@
-<h1 align="center">MRB</h1>
-<p align="center">Mission restart bootcampt by Programming Hero. Next level web development prerequisites.</p>
+# MRB (Mission Restart Bootcampt by Programming Hero)
 
-<p align="center">
-    <img src="https://img.shields.io/github/repo-size/ownist/mrb">
-    <img src="https://img.shields.io/github/license/ownist/mrb">
-    <img src="https://img.shields.io/github/commit-activity/t/ownist/mrb">
-    <img src="https://img.shields.io/github/last-commit/ownist/mrb">
-    <img src="https://img.shields.io/github/contributors/ownist/mrb">
+![GitHub repo size](https://img.shields.io/github/repo-size/ownist/mrb)
+![GitHub License](https://img.shields.io/github/license/ownist/mrb)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ownist/mrb)
+![GitHub last commit](https://img.shields.io/github/last-commit/ownist/mrb)
+![GitHub contributors](https://img.shields.io/github/contributors/ownist/mrb)
+
+## The Repository
+
+**Mission restart bootcampt by Programming Hero. Next level web development prerequisites.**
+
+This repository is a bootcamp by **Programming Hero**, which is a prerequisite for **Next Level** web development (Level - 2). In this repo, I have pushed the entire bootcamp, including practice code, troubleshooting, etc.
+
+## MRB
+
+<p align="left">
+    <img src="https://i.ibb.co.com/PZ92PD7s/mrb-banner.png" alt="MRB in action" />
 </p>
 
-### Goals:
+## License
 
-- This repository is a bootcamp by **Programming Hero**, which is a prerequisite for **Next Level** web development (Level - 2). In this repo, I have pushed the entire bootcamp, including practice code, troubleshooting, etc.
+Copyright (c) Shahed Bishwas. All rights reserved.
+
+Licensed under the [MIT](LICENSE) license.
