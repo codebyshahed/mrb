@@ -1,3 +1,7 @@
+<p align="left">
+    <img src="https://i.ibb.co.com/PZ92PD7s/mrb-banner.png" alt="MRB in action" />
+</p>
+
 # MRB (Mission Restart Bootcampt by Programming Hero)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/ownist/mrb)
@@ -13,10 +17,6 @@
 This repository is a bootcamp by **Programming Hero**, which is a prerequisite for **Next Level** web development (Level - 2). In this repo, I have pushed the entire bootcamp, including practice code, troubleshooting, etc.
 
 ## MRB
-
-<p align="left">
-    <img src="https://i.ibb.co.com/PZ92PD7s/mrb-banner.png" alt="MRB in action" />
-</p>
 
 ## License
 
