@@ -16,8 +16,6 @@
 
 This repository is a bootcamp by **Programming Hero**, which is a prerequisite for **Next Level** web development (Level - 2). In this repo, I have pushed the entire bootcamp, including practice code, troubleshooting, etc.
 
-## MRB
-
 ## License
 
 Copyright (c) Shahed Bishwas. All rights reserved.
