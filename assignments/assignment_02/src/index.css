@@ -1,0 +1,26 @@
+/* google fonts "Inter" */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+/* theme customizations */
+@theme {
+  /* fonts */
+  --font-display: "Inter", sans-serif;
+}
+
+/* base style */
+@layer base {
+  body {
+    @apply w-full relative overflow-x-hidden bg-neutral-100 font-display;
+  }
+
+  ::selection {
+    background: #008545;
+    color: white;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}

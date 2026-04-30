@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still...",
+    "customer": "John Smith",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/15/2024"
+  },
+  {
+    "id": 1002,
+    "title": "Payment Gateway Timeout",
+    "description": "Users are reporting 504 errors when attempting to process payments through Stripe.",
+    "customer": "Sarah Jenkins",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/16/2024"
+  },
+  {
+    "id": 1003,
+    "title": "Dashboard Layout Broken",
+    "description": "The sidebar overlaps the main content on screen sizes below 1024px.",
+    "customer": "Robert Dow",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/17/2024"
+  },
+  {
+    "id": 1004,
+    "title": "Welcome Email Not Sending",
+    "description": "New users are not receiving the verification email after signing up.",
+    "customer": "Emily Blunt",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "1/18/2024"
+  },
+  {
+    "id": 1005,
+    "title": "Database Connection Leak",
+    "description": "Server logs showing high connection pool usage; needs immediate investigation.",
+    "customer": "Admin Panel",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/19/2024"
+  },
+  {
+    "id": 1006,
+    "title": "Profile Picture Upload Fail",
+    "description": "Images larger than 2MB are being rejected without a proper error message.",
+    "customer": "Michael Scott",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/20/2024"
+  },
+  {
+    "id": 1007,
+    "title": "Search Latency Issue",
+    "description": "Search queries are taking more than 5 seconds to return results from the DB.",
+    "customer": "Pam Beesly",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/21/2024"
+  },
+  {
+    "id": 1008,
+    "title": "Subscription Update Failure",
+    "description": "Users cannot upgrade from Basic to Pro plan; billing cycle error.",
+    "customer": "Dwight Schrute",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/22/2024"
+  },
+  {
+    "id": 1009,
+    "title": "Broken Link in Footer",
+    "description": "The 'Privacy Policy' link in the footer leads to a 404 page.",
+    "customer": "Jim Halpert",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "1/23/2024"
+  },
+  {
+    "id": 1010,
+    "title": "PDF Report Generation Error",
+    "description": "The monthly export feature is crashing when generating data for large accounts.",
+    "customer": "Angela Martin",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/24/2024"
+  },
+  {
+    "id": 1011,
+    "title": "Dark Mode Toggle Bug",
+    "description": "Switching to dark mode does not change the text color of the data tables.",
+    "customer": "Kevin Malone",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "1/25/2024"
+  },
+  {
+    "id": 1012,
+    "title": "Mobile App Crash on Launch",
+    "description": "Android users reporting crashes immediately after opening the application.",
+    "customer": "Oscar Martinez",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/26/2024"
+  },
+  {
+    "id": 1013,
+    "title": "Missing Translation Keys",
+    "description": "Several buttons in the settings page are showing raw JSON keys instead of labels.",
+    "customer": "Stanley Hudson",
+    "priority": "LOW PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/27/2024"
+  },
+  {
+    "id": 1014,
+    "title": "API Rate Limit Too Strict",
+    "description": "Integrations are being blocked prematurely due to incorrect rate limit config.",
+    "customer": "Phyllis Vance",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "1/28/2024"
+  },
+  {
+    "id": 1015,
+    "title": "Incorrect Inventory Count",
+    "description": "Dashboard showing 'Out of Stock' for items that have positive balance in DB.",
+    "customer": "Ryan Howard",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/29/2024"
+  },
+  {
+    "id": 1016,
+    "title": "Two-Factor Auth Slow SMS",
+    "description": "SMS codes are taking up to 10 minutes to arrive for international users.",
+    "customer": "Kelly Kapoor",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "1/30/2024"
+  }
+]
